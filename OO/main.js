@@ -1,5 +1,12 @@
 "use strict";
 exports.__esModule = true;
+var estudante_1 = require("./estudante");
 var pessoa_1 = require("./pessoa");
-var p = new pessoa_1.Pessoa('Caroline');
-p.showPessoa();
+var pessoarepository_1 = require("./pessoarepository");
+var pessoa = new pessoa_1.Pessoa('Caroline');
+pessoa.showPessoa();
+var estudante = new estudante_1.Estudante('Eduardo');
+estudante.showPessoa();
+var pessoaRepo = new pessoarepository_1.PessoaRepository;
+pessoaRepo.insert(pessoa);
+pessoaRepo.insert(estudante);

@@ -1,5 +1,14 @@
+import { Estudante } from "./estudante";
+import { IRepositoryBase } from "./irepositorybase";
 import { Pessoa } from "./pessoa";
+import { PessoaRepository } from "./pessoarepository";
 
-let p = new Pessoa('Caroline');
+let pessoa = new Pessoa('Caroline');
+pessoa.showPessoa();
 
-p.showPessoa();
+let estudante = new Estudante('Eduardo');
+estudante.showPessoa();
+
+let pessoaRepo: IRepositoryBase = new PessoaRepository;
+pessoaRepo.insert(pessoa);
+pessoaRepo.insert(estudante);

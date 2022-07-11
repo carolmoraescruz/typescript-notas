@@ -9,4 +9,8 @@ export class Pessoa{
         console.log(`Nome: ${this.nome}`);
     }
 
+    public toString(): string {
+        return `Classe Pessoa, nome: ${this.nome}`;
+    }
+
 }

@@ -8,6 +8,9 @@ var Pessoa = /** @class */ (function () {
     Pessoa.prototype.showPessoa = function () {
         console.log("Nome: ".concat(this.nome));
     };
+    Pessoa.prototype.toString = function () {
+        return "Classe Pessoa, nome: ".concat(this.nome);
+    };
     return Pessoa;
 }());
 exports.Pessoa = Pessoa;
